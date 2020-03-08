@@ -13,11 +13,11 @@ BOT_NAME = 'scrape_stopshop'
 
 SPIDER_MODULES = ['scrape_stopshop.spiders']
 NEWSPIDER_MODULE = 'scrape_stopshop.spiders'
-# ITEM_PIPELINES = {
-#     'scrape_stopshop.pipelines.MongoPipeline': 300,
-# }
-# MONGO_URI = 'mongodb+srv://myc:Miku0831@cluster0-qimlz.mongodb.net/test?retryWrites=true&w=majority'
-# MONGO_DATABASE = 'admin'
+ITEM_PIPELINES = {
+    'scrape_stopshop.pipelines.MongoPipeline': 300,
+}
+MONGO_URI = 'mongodb+srv://myc:QXwzY74GIURNCqWR@cluster0-qimlz.mongodb.net/test?retryWrites=true&w=majority'
+MONGO_DATABASE = 'SwiftProject'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'scrape_stopshop (+http://www.yourdomain.com)'
 

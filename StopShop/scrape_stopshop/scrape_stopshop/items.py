@@ -19,6 +19,6 @@ class ScrapeStopshopItem(scrapy.Item):
     validity = scrapy.Field()
     item_disclaimer_text = scrapy.Field()
     item_description = scrapy.Field()
-    SaleStory = scrapy.Field()
+    SalesStory = scrapy.Field()
     Coupon = scrapy.Field()
     pass

@@ -1,5 +1,5 @@
 import scrapy
-
+from scrape_stopshop.items import ScrapeStopshopItem
 
 class QuotesSpider(scrapy.Spider):
     name = "stopshop"
@@ -25,7 +25,7 @@ class QuotesSpider(scrapy.Spider):
     #         yield scrapy.Request(url=url, callback=self.parse)
 
     def parse(self, response):
-        # items = {}
+        items = {}
         for item in response.xpath('//div[@class="items-list"]/div[position()>1]'): 
             # lis = 
             item_category=item.xpath(".//h3/text()").get()
@@ -39,21 +39,35 @@ class QuotesSpider(scrapy.Spider):
         # yield self.items
     def Second_parse(self,response):
         
+        Items = ScrapeStopshopItem()
         ImageSrc = response.xpath('//div[@class="v2_item_image_wrapper"]//img/@src').get()
         PriceTag = ''.join(response.xpath('//div[@class="price"]//span/text()').getall())
         validity = response.xpath('normalize-space(//div[@class="validity"]/text())').get()
-        item_disclaimer_text = response.xpath('//div[@class="flyer_item_disclaimer_text"]/p/text()').get()
+        item_disclaimer_text = ''.join(response.xpath('normalize-space(//div[@class="flyer_item_disclaimer_text"]/p[descendant-or-self::text()])').getall())
         coupon = response.xpath('//div[@class="v2_coupons_wrapper"]')
-        item_description =  ''.join(response.xpath('//div[@class="flyer_item_description clearfix"]//p/text()').getall())
+        item_description =  ''.join(response.xpath('normalize-space(//div[@class="flyer_item_description clearfix"]//p[descendant-or-self::text()])').getall())
         SalesStory = response.xpath('//div[@class="sale_story"]/text()').get()
         
-        response.meta.get("item").update({"ImageSrc":ImageSrc,"PriceTag":PriceTag,"validity":validity,\
-            "item_disclaimer_text":item_disclaimer_text,"Description":item_description,\
-            "SalesStory":SalesStory,\
-            "Coupon":{"Id":coupon.xpath("./div[1]/@coupon_id").get(),\
-                "CouponDetail":''.join(coupon.xpath('//div[@class="v2_coupon_details"]//div/text()').getall())+" "+''.join(\
-                    coupon.xpath('//div[@class="v2_coupon_details"]//p/text()').getall()),\
-                    "CouponDiscalimer":coupon.xpath('//p[@class="disclaimer"]/text()').get()}})
+        Items["Id"] = response.meta.get("item")["Id"]
+        Items["Item"] = response.meta.get("item")["Item"]
+        Items["category"] = response.meta.get("item")["category"]
+        Items["ImageSrc"] = ImageSrc
+        Items["validity"] = validity
+        Items["item_disclaimer_text"] = item_disclaimer_text
+        Items["Coupon"] = {"Id":coupon.xpath("./div[1]/@coupon_id").get(),\
+                "CouponDetail":''.join(coupon.xpath('//div[@class="v2_coupon_details"]//div/text()').getall()).strip()+" "+''.join(\
+                    coupon.xpath('normalize-space(//div[@class="v2_coupon_details"]//p/text())').getall()).strip(),\
+                    "CouponDiscalimer":coupon.xpath('normalize-space(//p[@class="disclaimer"]/text())').get()}
+        Items["item_description"] = item_description
+        Items["SalesStory"] = SalesStory
+        Items["PriceTag"] = PriceTag 
+        # response.meta.get("item").update({"ImageSrc":ImageSrc,"PriceTag":PriceTag,"validity":validity,\
+        #     "item_disclaimer_text":item_disclaimer_text,"Description":item_description,\
+        #     "SalesStory":SalesStory,\
+        #     "Coupon":{"Id":coupon.xpath("./div[1]/@coupon_id").get(),\
+        #         "CouponDetail":''.join(coupon.xpath('//div[@class="v2_coupon_details"]//div/text()').getall().strip())+" "+''.join(\
+        #             coupon.xpath('//div[@class="v2_coupon_details"]//p/text()').getall().strip()),\
+        #             "CouponDiscalimer":coupon.xpath('//p[@class="disclaimer"]/text()').get()}})
         # print(ImageSrc)
 
-        yield   response.meta.get("item")
+        yield   Items
