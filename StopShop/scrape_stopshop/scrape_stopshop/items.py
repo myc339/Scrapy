@@ -7,7 +7,13 @@
 
 import scrapy
 
-
+class StopShopStore(scrapy.Item):
+    #items = scrapy.Field()
+    postalCode = scrapy.Field()
+    storeCode = scrapy.Field()
+#class StopShopCategory(scrapy.Item):
+ #   category = scrapy.Field()
+  #  Items = scrapy.Field()
 class ScrapeStopshopItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
@@ -21,4 +27,6 @@ class ScrapeStopshopItem(scrapy.Item):
     item_description = scrapy.Field()
     SalesStory = scrapy.Field()
     Coupon = scrapy.Field()
+    link = scrapy.Field()
+    storeCode = scrapy.Field()
     pass

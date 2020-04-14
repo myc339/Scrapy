@@ -17,7 +17,7 @@ ITEM_PIPELINES = {
     'scrape_stopshop.pipelines.MongoPipeline': 300,
 }
 MONGO_URI = 'mongodb+srv://myc:QXwzY74GIURNCqWR@cluster0-qimlz.mongodb.net/test?retryWrites=true&w=majority'
-MONGO_DATABASE = 'SwiftProject'
+MONGO_DATABASE = 'StopShop2'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'scrape_stopshop (+http://www.yourdomain.com)'
 

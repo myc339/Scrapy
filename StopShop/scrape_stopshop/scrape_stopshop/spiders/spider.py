@@ -1,8 +1,12 @@
 import scrapy
-from scrape_stopshop.items import ScrapeStopshopItem
-
+from scrape_stopshop.items import ScrapeStopshopItem,StopShopStore
+from urllib.parse import urlparse
+from urllib.parse import parse_qs
 class QuotesSpider(scrapy.Spider):
     name = "stopshop"
+
+   
+        
     downloda_delay = 15 
     items = {}
     # Infourl = 'https://circular.stopandshop.com/flyer_item/tabbed/''?type=2&locale=en-US&store_code=0433&show_shopping_list_integration=1' 
@@ -26,17 +30,29 @@ class QuotesSpider(scrapy.Spider):
 
     def parse(self, response):
         items = {}
+        
+        # stopStore = StopShopStore()
+        url = urlparse(response.request.url)
+        storeCode = parse_qs(url.query)['store_code']
+        # stopStore["postalCode"] = parse_qs(url.query)['postal_code']
+        # yield stopStore
+
         for item in response.xpath('//div[@class="items-list"]/div[position()>1]'): 
             # lis = 
+            
             item_category=item.xpath(".//h3/text()").get()
+            #catergory["category"] = item_category
+            
+            #yield catergory
             # self.items[item_category] ={}
             # items[item_category] ={{"Product{}".format(i): node.xpath('./div[@class="item-name"]/text()').get() for i,node in enumerate(item.xpath('./ul/li'))}
             for li in item.xpath("./ul/li"):
                 id = li.xpath('./a/@itemid').get()
+                #print(id)
                 item = li.xpath('./div[@class="item-name"]/text()').get()
-                self.items[item] = {"Id":id,"category":item_category,"Item":item}
-                yield scrapy.Request(url='https://circular.stopandshop.com/flyer_item/tabbed/'+id+'?type=2&locale=en-US&store_code=0433&show_shopping_list_integration=1' , callback=self.Second_parse,meta={'item':self.items[item] })
-        # yield self.items
+                self.items[item] = {"Id":id,"category":item_category,"Item":item,"link":response.request.url,"storeCode":parse_qs(url.query)['store_code']}
+                yield  scrapy.Request(url='https://circular.stopandshop.com/flyer_item/tabbed/'+id+'?type=2&locale=en-US&store_code=0433&show_shopping_list_integration=1' , callback=self.Second_parse,meta={'item':self.items[item] })
+        
     def Second_parse(self,response):
         
         Items = ScrapeStopshopItem()
@@ -61,6 +77,8 @@ class QuotesSpider(scrapy.Spider):
         Items["item_description"] = item_description
         Items["SalesStory"] = SalesStory
         Items["PriceTag"] = PriceTag 
+        Items["link"] =  response.meta.get("item")["link"]
+        Items["storeCode"] = response.meta.get("item")["storeCode"]
         # response.meta.get("item").update({"ImageSrc":ImageSrc,"PriceTag":PriceTag,"validity":validity,\
         #     "item_disclaimer_text":item_disclaimer_text,"Description":item_description,\
         #     "SalesStory":SalesStory,\
@@ -69,5 +87,5 @@ class QuotesSpider(scrapy.Spider):
         #             coupon.xpath('//div[@class="v2_coupon_details"]//p/text()').getall().strip()),\
         #             "CouponDiscalimer":coupon.xpath('//p[@class="disclaimer"]/text()').get()}})
         # print(ImageSrc)
-
-        yield   Items
+        
+        return   Items
