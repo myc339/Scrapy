@@ -1,0 +1,96 @@
+# this is an auto generated file. This will be overwritten
+query GetMyType($id: ID!) {
+  getMyType(id: $id) {
+    id
+    title
+    content
+    price
+    rating
+  }
+}
+query ListMyTypes(
+  $filter: ModelMyTypeFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listMyTypes(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      title
+      content
+      price
+      rating
+    }
+    nextToken
+  }
+}
+query GetStopshop($storeCode: String!, $ItemId: String!) {
+  getStopshop(storeCode: $storeCode, ItemId: $ItemId) {
+    ItemId
+    storeCode
+    Coupon
+    category
+    Item
+    ImageSrc
+    PriceTag
+    validity
+    itemDisclaimerText
+    itemDescription
+    SalesStory
+    link
+  }
+}
+query ListStopshops(
+  $filter: TableStopshopFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listStopshops(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      ItemId
+      storeCode
+      Coupon
+      category
+      Item
+      ImageSrc
+      PriceTag
+      validity
+      itemDisclaimerText
+      itemDescription
+      SalesStory
+      link
+    }
+    nextToken
+  }
+}
+query GetUsers($userId: String!) {
+  getUsers(userId: $userId) {
+    userId
+    EmailAddress
+    Phone
+    Address
+    City
+    Language
+    Name
+    Password
+  }
+}
+query ListUsers(
+  $filter: TableUsersFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listUsers(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      userId
+      EmailAddress
+      Phone
+      Address
+      City
+      Language
+      Name
+      Password
+    }
+    nextToken
+  }
+}

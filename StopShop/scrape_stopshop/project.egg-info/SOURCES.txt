@@ -1,0 +1,13 @@
+setup.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt
+scrape_stopshop/__init__.py
+scrape_stopshop/items.py
+scrape_stopshop/middlewares.py
+scrape_stopshop/pipelines.py
+scrape_stopshop/settings.py
+scrape_stopshop/spiders/__init__.py
+scrape_stopshop/spiders/spider.py

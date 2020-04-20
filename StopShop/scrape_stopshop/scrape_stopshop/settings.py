@@ -16,8 +16,15 @@ NEWSPIDER_MODULE = 'scrape_stopshop.spiders'
 ITEM_PIPELINES = {
     'scrape_stopshop.pipelines.MongoPipeline': 300,
 }
-MONGO_URI = 'mongodb+srv://myc:QXwzY74GIURNCqWR@cluster0-qimlz.mongodb.net/test?retryWrites=true&w=majority'
-MONGO_DATABASE = 'StopShop2'
+# MONGO_URI = 'mongodb+srv://myc:QXwzY74GIURNCqWR@cluster0-qimlz.mongodb.net/test?retryWrites=true&w=majority'
+# MONGO_DATABASE = 'StopShop2'
+
+AWS_ACCESS_KEY_ID = 'AKIAR6COMAH7LP22ISOL'
+AWS_SECRET_ACCESS_KEY = '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'
+DYNAMODB_PIPELINE_REGION_NAME = 'us-east-1'
+DYNAMODB_PIPELINE_TABLE_NAME = 'stopshop'
+
+
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'scrape_stopshop (+http://www.yourdomain.com)'
 
