@@ -1,0 +1,184 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateMyType {
+  onCreateMyType {
+    id
+    title
+    content
+    price
+    rating
+  }
+}
+subscription OnUpdateMyType {
+  onUpdateMyType {
+    id
+    title
+    content
+    price
+    rating
+  }
+}
+subscription OnDeleteMyType {
+  onDeleteMyType {
+    id
+    title
+    content
+    price
+    rating
+  }
+}
+subscription OnCreateStopshop(
+  $ItemId: String
+  $storeCode: String
+  $Coupon: String
+  $category: String
+  $Item: String
+) {
+  onCreateStopshop(
+    ItemId: $ItemId
+    storeCode: $storeCode
+    Coupon: $Coupon
+    category: $category
+    Item: $Item
+  ) {
+    ItemId
+    storeCode
+    Coupon
+    category
+    Item
+    ImageSrc
+    PriceTag
+    validity
+    itemDisclaimerText
+    itemDescription
+    SalesStory
+    link
+  }
+}
+subscription OnUpdateStopshop(
+  $ItemId: String
+  $storeCode: String
+  $Coupon: String
+  $category: String
+  $Item: String
+) {
+  onUpdateStopshop(
+    ItemId: $ItemId
+    storeCode: $storeCode
+    Coupon: $Coupon
+    category: $category
+    Item: $Item
+  ) {
+    ItemId
+    storeCode
+    Coupon
+    category
+    Item
+    ImageSrc
+    PriceTag
+    validity
+    itemDisclaimerText
+    itemDescription
+    SalesStory
+    link
+  }
+}
+subscription OnDeleteStopshop(
+  $ItemId: String
+  $storeCode: String
+  $Coupon: String
+  $category: String
+  $Item: String
+) {
+  onDeleteStopshop(
+    ItemId: $ItemId
+    storeCode: $storeCode
+    Coupon: $Coupon
+    category: $category
+    Item: $Item
+  ) {
+    ItemId
+    storeCode
+    Coupon
+    category
+    Item
+    ImageSrc
+    PriceTag
+    validity
+    itemDisclaimerText
+    itemDescription
+    SalesStory
+    link
+  }
+}
+subscription OnCreateUsers(
+  $userId: String
+  $EmailAddress: String
+  $Phone: String
+  $Address: String
+  $City: String
+) {
+  onCreateUsers(
+    userId: $userId
+    EmailAddress: $EmailAddress
+    Phone: $Phone
+    Address: $Address
+    City: $City
+  ) {
+    userId
+    EmailAddress
+    Phone
+    Address
+    City
+    Language
+    Name
+    Password
+  }
+}
+subscription OnUpdateUsers(
+  $userId: String
+  $EmailAddress: String
+  $Phone: String
+  $Address: String
+  $City: String
+) {
+  onUpdateUsers(
+    userId: $userId
+    EmailAddress: $EmailAddress
+    Phone: $Phone
+    Address: $Address
+    City: $City
+  ) {
+    userId
+    EmailAddress
+    Phone
+    Address
+    City
+    Language
+    Name
+    Password
+  }
+}
+subscription OnDeleteUsers(
+  $userId: String
+  $EmailAddress: String
+  $Phone: String
+  $Address: String
+  $City: String
+) {
+  onDeleteUsers(
+    userId: $userId
+    EmailAddress: $EmailAddress
+    Phone: $Phone
+    Address: $Address
+    City: $City
+  ) {
+    userId
+    EmailAddress
+    Phone
+    Address
+    City
+    Language
+    Name
+    Password
+  }
+}
