@@ -119,3 +119,87 @@ mutation DeleteUsers($input: DeleteUsersInput!) {
     Password
   }
 }
+mutation CreateStoreInfos($input: CreateStoreInfosInput!) {
+  createStoreInfos(input: $input) {
+    StoreAddress
+    StoreId
+    StorePostalCode
+    StoreCode
+    StoreName
+  }
+}
+mutation UpdateStoreInfos($input: UpdateStoreInfosInput!) {
+  updateStoreInfos(input: $input) {
+    StoreAddress
+    StoreId
+    StorePostalCode
+    StoreCode
+    StoreName
+  }
+}
+mutation DeleteStoreInfos($input: DeleteStoreInfosInput!) {
+  deleteStoreInfos(input: $input) {
+    StoreAddress
+    StoreId
+    StorePostalCode
+    StoreCode
+    StoreName
+  }
+}
+mutation CreateUserMark($input: CreateUserMarkInput!) {
+  createUserMark(input: $input) {
+    Markid
+    UserId
+    itemId
+    SharingId
+    Store
+  }
+}
+mutation UpdateUserMark($input: UpdateUserMarkInput!) {
+  updateUserMark(input: $input) {
+    Markid
+    UserId
+    itemId
+    SharingId
+    Store
+  }
+}
+mutation DeleteUserMark($input: DeleteUserMarkInput!) {
+  deleteUserMark(input: $input) {
+    Markid
+    UserId
+    itemId
+    SharingId
+    Store
+  }
+}
+mutation CreateUserSharing($input: CreateUserSharingInput!) {
+  createUserSharing(input: $input) {
+    ShareId
+    UserId
+    Content
+    ReleaseDate
+    ImgSrc
+    title
+  }
+}
+mutation UpdateUserSharing($input: UpdateUserSharingInput!) {
+  updateUserSharing(input: $input) {
+    ShareId
+    UserId
+    Content
+    ReleaseDate
+    ImgSrc
+    title
+  }
+}
+mutation DeleteUserSharing($input: DeleteUserSharingInput!) {
+  deleteUserSharing(input: $input) {
+    ShareId
+    UserId
+    Content
+    ReleaseDate
+    ImgSrc
+    title
+  }
+}

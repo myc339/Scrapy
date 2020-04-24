@@ -94,3 +94,80 @@ query ListUsers(
     nextToken
   }
 }
+query GetStoreInfos($StoreId: String!, $StoreAddress: String!) {
+  getStoreInfos(StoreId: $StoreId, StoreAddress: $StoreAddress) {
+    StoreAddress
+    StoreId
+    StorePostalCode
+    StoreCode
+    StoreName
+  }
+}
+query ListStoreInfos(
+  $filter: TableStoreInfosFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listStoreInfos(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      StoreAddress
+      StoreId
+      StorePostalCode
+      StoreCode
+      StoreName
+    }
+    nextToken
+  }
+}
+query GetUserMark($UserId: String!, $Markid: String!) {
+  getUserMark(UserId: $UserId, Markid: $Markid) {
+    Markid
+    UserId
+    itemId
+    SharingId
+    Store
+  }
+}
+query ListUserMarks(
+  $filter: TableUserMarkFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listUserMarks(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      Markid
+      UserId
+      itemId
+      SharingId
+      Store
+    }
+    nextToken
+  }
+}
+query GetUserSharing($ShareId: String!, $UserId: String!) {
+  getUserSharing(ShareId: $ShareId, UserId: $UserId) {
+    ShareId
+    UserId
+    Content
+    ReleaseDate
+    ImgSrc
+    title
+  }
+}
+query ListUserSharings(
+  $filter: TableUserSharingFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listUserSharings(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      ShareId
+      UserId
+      Content
+      ReleaseDate
+      ImgSrc
+      title
+    }
+    nextToken
+  }
+}

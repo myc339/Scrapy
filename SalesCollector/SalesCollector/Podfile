@@ -9,4 +9,6 @@ target 'SalesCollector' do
     pod 'AWSAppSync', '~> 3.1.0'
     pod 'AmplifyPlugins/AWSAPIPlugin'
     pod 'amplify-tools'
+    pod 'GoogleMaps'
+    pod 'GooglePlaces'
 end

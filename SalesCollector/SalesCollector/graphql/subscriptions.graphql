@@ -182,3 +182,189 @@ subscription OnDeleteUsers(
     Password
   }
 }
+subscription OnCreateStoreInfos(
+  $StoreAddress: String
+  $StoreId: String
+  $StorePostalCode: String
+  $StoreCode: String
+  $StoreName: String
+) {
+  onCreateStoreInfos(
+    StoreAddress: $StoreAddress
+    StoreId: $StoreId
+    StorePostalCode: $StorePostalCode
+    StoreCode: $StoreCode
+    StoreName: $StoreName
+  ) {
+    StoreAddress
+    StoreId
+    StorePostalCode
+    StoreCode
+    StoreName
+  }
+}
+subscription OnUpdateStoreInfos(
+  $StoreAddress: String
+  $StoreId: String
+  $StorePostalCode: String
+  $StoreCode: String
+  $StoreName: String
+) {
+  onUpdateStoreInfos(
+    StoreAddress: $StoreAddress
+    StoreId: $StoreId
+    StorePostalCode: $StorePostalCode
+    StoreCode: $StoreCode
+    StoreName: $StoreName
+  ) {
+    StoreAddress
+    StoreId
+    StorePostalCode
+    StoreCode
+    StoreName
+  }
+}
+subscription OnDeleteStoreInfos(
+  $StoreAddress: String
+  $StoreId: String
+  $StorePostalCode: String
+  $StoreCode: String
+  $StoreName: String
+) {
+  onDeleteStoreInfos(
+    StoreAddress: $StoreAddress
+    StoreId: $StoreId
+    StorePostalCode: $StorePostalCode
+    StoreCode: $StoreCode
+    StoreName: $StoreName
+  ) {
+    StoreAddress
+    StoreId
+    StorePostalCode
+    StoreCode
+    StoreName
+  }
+}
+subscription OnCreateUserMark(
+  $Markid: String
+  $UserId: String
+  $itemId: String
+  $SharingId: String
+) {
+  onCreateUserMark(
+    Markid: $Markid
+    UserId: $UserId
+    itemId: $itemId
+    SharingId: $SharingId
+  ) {
+    Markid
+    UserId
+    itemId
+    SharingId
+    Store
+  }
+}
+subscription OnUpdateUserMark(
+  $Markid: String
+  $UserId: String
+  $itemId: String
+  $SharingId: String
+) {
+  onUpdateUserMark(
+    Markid: $Markid
+    UserId: $UserId
+    itemId: $itemId
+    SharingId: $SharingId
+  ) {
+    Markid
+    UserId
+    itemId
+    SharingId
+    Store
+  }
+}
+subscription OnDeleteUserMark(
+  $Markid: String
+  $UserId: String
+  $itemId: String
+  $SharingId: String
+) {
+  onDeleteUserMark(
+    Markid: $Markid
+    UserId: $UserId
+    itemId: $itemId
+    SharingId: $SharingId
+  ) {
+    Markid
+    UserId
+    itemId
+    SharingId
+    Store
+  }
+}
+subscription OnCreateUserSharing(
+  $ShareId: String
+  $UserId: String
+  $Content: String
+  $ReleaseDate: String
+  $ImgSrc: String
+) {
+  onCreateUserSharing(
+    ShareId: $ShareId
+    UserId: $UserId
+    Content: $Content
+    ReleaseDate: $ReleaseDate
+    ImgSrc: $ImgSrc
+  ) {
+    ShareId
+    UserId
+    Content
+    ReleaseDate
+    ImgSrc
+    title
+  }
+}
+subscription OnUpdateUserSharing(
+  $ShareId: String
+  $UserId: String
+  $Content: String
+  $ReleaseDate: String
+  $ImgSrc: String
+) {
+  onUpdateUserSharing(
+    ShareId: $ShareId
+    UserId: $UserId
+    Content: $Content
+    ReleaseDate: $ReleaseDate
+    ImgSrc: $ImgSrc
+  ) {
+    ShareId
+    UserId
+    Content
+    ReleaseDate
+    ImgSrc
+    title
+  }
+}
+subscription OnDeleteUserSharing(
+  $ShareId: String
+  $UserId: String
+  $Content: String
+  $ReleaseDate: String
+  $ImgSrc: String
+) {
+  onDeleteUserSharing(
+    ShareId: $ShareId
+    UserId: $UserId
+    Content: $Content
+    ReleaseDate: $ReleaseDate
+    ImgSrc: $ImgSrc
+  ) {
+    ShareId
+    UserId
+    Content
+    ReleaseDate
+    ImgSrc
+    title
+  }
+}

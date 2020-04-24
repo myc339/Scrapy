@@ -10,21 +10,37 @@
 		07039B90244E0827008601EF /* data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07039B8E244E0827008601EF /* data.xcdatamodeld */; };
 		07039B9B244E0913008601EF /* UserInfo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07039B99244E0913008601EF /* UserInfo+CoreDataClass.swift */; };
 		07039B9C244E0913008601EF /* UserInfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07039B9A244E0913008601EF /* UserInfo+CoreDataProperties.swift */; };
+		07039BA0244E92D4008601EF /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07039B9F244E92D4008601EF /* CustomTableViewCell.swift */; };
+		07039BA2244ED45B008601EF /* gardientColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07039BA1244ED45B008601EF /* gardientColor.swift */; };
+		07039BA4244F9714008601EF /* StoreDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07039BA3244F9714008601EF /* StoreDetail.swift */; };
+		070DB6072452919D00040F5A /* SharingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070DB6062452919D00040F5A /* SharingTableViewController.swift */; };
+		070DB60A2452967600040F5A /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070DB6092452967600040F5A /* PostViewController.swift */; };
 		0733561A2447C60D008DECE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073356192447C60D008DECE7 /* AppDelegate.swift */; };
 		0733561E2447C60D008DECE7 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0733561D2447C60D008DECE7 /* FirstViewController.swift */; };
 		073356202447C60D008DECE7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0733561F2447C60D008DECE7 /* SecondViewController.swift */; };
 		073356232447C60D008DECE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 073356212447C60D008DECE7 /* Main.storyboard */; };
 		073356252447C610008DECE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 073356242447C610008DECE7 /* Assets.xcassets */; };
 		073356282447C610008DECE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 073356262447C610008DECE7 /* LaunchScreen.storyboard */; };
-		07C23D7C24494FA000E32F6B /* UsersAndSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C23D7B24494FA000E32F6B /* UsersAndSettingsTableViewController.swift */; };
+		07A5C58724515434008F19D1 /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A5C58624515434008F19D1 /* CustomSearchBar.swift */; };
+		07A5C5892451624F008F19D1 /* ItemDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A5C5882451624F008F19D1 /* ItemDetails.swift */; };
+		07A5C58B2452065B008F19D1 /* BasetabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A5C58A2452065B008F19D1 /* BasetabBarController.swift */; };
+		07A5C58D24520F1A008F19D1 /* LoadingProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A5C58C24520F1A008F19D1 /* LoadingProgressViewController.swift */; };
+		07A5C59024521EEF008F19D1 /* MarkTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A5C58F24521EEF008F19D1 /* MarkTableViewController.swift */; };
+		07A5C592245223BC008F19D1 /* Mark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A5C591245223BC008F19D1 /* Mark.swift */; };
+		07A5C59424523129008F19D1 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A5C59324523129008F19D1 /* CustomTextField.swift */; };
+		07A5C59624523983008F19D1 /* item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A5C59524523983008F19D1 /* item.swift */; };
+		07BA22AA244FF66400173119 /* StoreDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BA22A9244FF66400173119 /* StoreDetailsTableViewController.swift */; };
+		07C23D7C24494FA000E32F6B /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C23D7B24494FA000E32F6B /* ProfileVC.swift */; };
 		07C23D7E244A492000E32F6B /* CustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C23D7D244A492000E32F6B /* CustomSegue.swift */; };
 		07C23D80244B7E3600E32F6B /* EmailEditingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C23D7F244B7E3600E32F6B /* EmailEditingTableViewController.swift */; };
 		07C23D82244B7F7800E32F6B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C23D81244B7F7800E32F6B /* CustomButton.swift */; };
 		07C23D84244B994600E32F6B /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C23D83244B994600E32F6B /* DesignableView.swift */; };
-		07C23D86244BA35700E32F6B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C23D85244BA35700E32F6B /* RootViewController.swift */; };
+		07C23D86244BA35700E32F6B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C23D85244BA35700E32F6B /* LoginViewController.swift */; };
 		07C23D8A244D1DF400E32F6B /* ForgotpasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C23D89244D1DF400E32F6B /* ForgotpasswordViewController.swift */; };
 		07C23D8C244D1E1A00E32F6B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C23D8B244D1E1A00E32F6B /* RegisterViewController.swift */; };
-		07F0C0D424490CF500E853C2 /* StoreInfosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F0C0D324490CF500E853C2 /* StoreInfosTableViewController.swift */; };
+		07E7C89B2450F383009B95A6 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E7C89A2450F383009B95A6 /* ItemTableViewCell.swift */; };
+		07E7C89D24513778009B95A6 /* PopCouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E7C89C24513778009B95A6 /* PopCouponViewController.swift */; };
+		07F0C0D424490CF500E853C2 /* mainvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F0C0D324490CF500E853C2 /* mainvc.swift */; };
 		07FFEE9D2447CA2700186D73 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FFEE9C2447CA2700186D73 /* API.swift */; };
 		A2DFAF68D7D443C287EB6EB4 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = E4AE9305461D4BBA9143BD7B /* amplifyconfiguration.json */; };
 		D5F75612AE5A7E7A00FC36EE /* Pods_SalesCollector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B156448F0F266ABB507A48B9 /* Pods_SalesCollector.framework */; };
@@ -35,6 +51,11 @@
 		07039B8F244E0827008601EF /* userinfo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = userinfo.xcdatamodel; sourceTree = "<group>"; };
 		07039B99244E0913008601EF /* UserInfo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserInfo+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		07039B9A244E0913008601EF /* UserInfo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserInfo+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		07039B9F244E92D4008601EF /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		07039BA1244ED45B008601EF /* gardientColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gardientColor.swift; sourceTree = "<group>"; };
+		07039BA3244F9714008601EF /* StoreDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDetail.swift; sourceTree = "<group>"; };
+		070DB6062452919D00040F5A /* SharingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingTableViewController.swift; sourceTree = "<group>"; };
+		070DB6092452967600040F5A /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		073356162447C60D008DECE7 /* SalesCollector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalesCollector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		073356192447C60D008DECE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0733561D2447C60D008DECE7 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -43,15 +64,26 @@
 		073356242447C610008DECE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		073356272447C610008DECE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		073356292447C610008DECE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		07C23D7B24494FA000E32F6B /* UsersAndSettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersAndSettingsTableViewController.swift; sourceTree = "<group>"; };
+		07A5C58624515434008F19D1 /* CustomSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
+		07A5C5882451624F008F19D1 /* ItemDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetails.swift; sourceTree = "<group>"; };
+		07A5C58A2452065B008F19D1 /* BasetabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasetabBarController.swift; sourceTree = "<group>"; };
+		07A5C58C24520F1A008F19D1 /* LoadingProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingProgressViewController.swift; sourceTree = "<group>"; };
+		07A5C58F24521EEF008F19D1 /* MarkTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkTableViewController.swift; sourceTree = "<group>"; };
+		07A5C591245223BC008F19D1 /* Mark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mark.swift; sourceTree = "<group>"; };
+		07A5C59324523129008F19D1 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		07A5C59524523983008F19D1 /* item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item.swift; sourceTree = "<group>"; };
+		07BA22A9244FF66400173119 /* StoreDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDetailsTableViewController.swift; sourceTree = "<group>"; };
+		07C23D7B24494FA000E32F6B /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		07C23D7D244A492000E32F6B /* CustomSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegue.swift; sourceTree = "<group>"; };
 		07C23D7F244B7E3600E32F6B /* EmailEditingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailEditingTableViewController.swift; sourceTree = "<group>"; };
 		07C23D81244B7F7800E32F6B /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		07C23D83244B994600E32F6B /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
-		07C23D85244BA35700E32F6B /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		07C23D85244BA35700E32F6B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		07C23D89244D1DF400E32F6B /* ForgotpasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotpasswordViewController.swift; sourceTree = "<group>"; };
 		07C23D8B244D1E1A00E32F6B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		07F0C0D324490CF500E853C2 /* StoreInfosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreInfosTableViewController.swift; sourceTree = "<group>"; };
+		07E7C89A2450F383009B95A6 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		07E7C89C24513778009B95A6 /* PopCouponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopCouponViewController.swift; sourceTree = "<group>"; };
+		07F0C0D324490CF500E853C2 /* mainvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainvc.swift; sourceTree = "<group>"; };
 		07FFEE9C2447CA2700186D73 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		2544EE8D88C94D499960872E /* amplifyxc.config */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = amplifyxc.config; path = ./amplifyxc.config; sourceTree = "<group>"; };
 		44827050B70D4AA6B7FFEF4E /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = awsconfiguration.json; path = ./awsconfiguration.json; sourceTree = "<group>"; };
@@ -74,6 +106,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07039BA6244FA1B3008601EF /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				07039BA3244F9714008601EF /* StoreDetail.swift */,
+				07A5C5882451624F008F19D1 /* ItemDetails.swift */,
+				07A5C591245223BC008F19D1 /* Mark.swift */,
+				07A5C59524523983008F19D1 /* item.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		07039BA7244FA1BE008601EF /* CustomElement */ = {
+			isa = PBXGroup;
+			children = (
+				07039BA1244ED45B008601EF /* gardientColor.swift */,
+				07039B9F244E92D4008601EF /* CustomTableViewCell.swift */,
+				07C23D7D244A492000E32F6B /* CustomSegue.swift */,
+				07C23D81244B7F7800E32F6B /* CustomButton.swift */,
+				07E7C89A2450F383009B95A6 /* ItemTableViewCell.swift */,
+				07A5C58624515434008F19D1 /* CustomSearchBar.swift */,
+				07A5C59324523129008F19D1 /* CustomTextField.swift */,
+			);
+			path = CustomElement;
+			sourceTree = "<group>";
+		};
+		07039BA8244FA1E6008601EF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				07C23D83244B994600E32F6B /* DesignableView.swift */,
+				07C23D89244D1DF400E32F6B /* ForgotpasswordViewController.swift */,
+				07C23D8B244D1E1A00E32F6B /* RegisterViewController.swift */,
+				07C23D85244BA35700E32F6B /* LoginViewController.swift */,
+				07A5C58C24520F1A008F19D1 /* LoadingProgressViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		07039BA9244FA1FE008601EF /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				07C23D7B24494FA000E32F6B /* ProfileVC.swift */,
+				07C23D7F244B7E3600E32F6B /* EmailEditingTableViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		070DB608245291A800040F5A /* Sharing */ = {
+			isa = PBXGroup;
+			children = (
+				070DB6062452919D00040F5A /* SharingTableViewController.swift */,
+				070DB6092452967600040F5A /* PostViewController.swift */,
+			);
+			path = Sharing;
+			sourceTree = "<group>";
+		};
 		0733560D2447C60D008DECE7 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +187,8 @@
 		073356182447C60D008DECE7 /* SalesCollector */ = {
 			isa = PBXGroup;
 			children = (
+				07A5C58E24521ECA008F19D1 /* Mark */,
+				07BA22A8244FF0FA00173119 /* Image */,
 				07039B99244E0913008601EF /* UserInfo+CoreDataClass.swift */,
 				07039B9A244E0913008601EF /* UserInfo+CoreDataProperties.swift */,
 				073356192447C60D008DECE7 /* AppDelegate.swift */,
@@ -107,20 +196,43 @@
 				0733561D2447C60D008DECE7 /* FirstViewController.swift */,
 				0733561F2447C60D008DECE7 /* SecondViewController.swift */,
 				073356212447C60D008DECE7 /* Main.storyboard */,
-				07C23D89244D1DF400E32F6B /* ForgotpasswordViewController.swift */,
-				07C23D8B244D1E1A00E32F6B /* RegisterViewController.swift */,
-				07C23D85244BA35700E32F6B /* RootViewController.swift */,
-				07C23D83244B994600E32F6B /* DesignableView.swift */,
-				07C23D7F244B7E3600E32F6B /* EmailEditingTableViewController.swift */,
-				07C23D7B24494FA000E32F6B /* UsersAndSettingsTableViewController.swift */,
+				07A5C58A2452065B008F19D1 /* BasetabBarController.swift */,
+				07039BA8244FA1E6008601EF /* Login */,
+				07039BA9244FA1FE008601EF /* Profile */,
 				073356242447C610008DECE7 /* Assets.xcassets */,
 				073356262447C610008DECE7 /* LaunchScreen.storyboard */,
 				073356292447C610008DECE7 /* Info.plist */,
-				07F0C0D324490CF500E853C2 /* StoreInfosTableViewController.swift */,
-				07C23D7D244A492000E32F6B /* CustomSegue.swift */,
-				07C23D81244B7F7800E32F6B /* CustomButton.swift */,
+				07BA22AB245011D700173119 /* Stores */,
+				07039BA7244FA1BE008601EF /* CustomElement */,
+				07039BA6244FA1B3008601EF /* Class */,
+				070DB608245291A800040F5A /* Sharing */,
 			);
 			path = SalesCollector;
+			sourceTree = "<group>";
+		};
+		07A5C58E24521ECA008F19D1 /* Mark */ = {
+			isa = PBXGroup;
+			children = (
+				07A5C58F24521EEF008F19D1 /* MarkTableViewController.swift */,
+			);
+			path = Mark;
+			sourceTree = "<group>";
+		};
+		07BA22A8244FF0FA00173119 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		07BA22AB245011D700173119 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				07BA22A9244FF66400173119 /* StoreDetailsTableViewController.swift */,
+				07F0C0D324490CF500E853C2 /* mainvc.swift */,
+				07E7C89C24513778009B95A6 /* PopCouponViewController.swift */,
+			);
+			path = Stores;
 			sourceTree = "<group>";
 		};
 		656D4D03E4A6D23867CB2ED9 /* Frameworks */ = {
@@ -152,6 +264,7 @@
 				073356132447C60D008DECE7 /* Frameworks */,
 				073356142447C60D008DECE7 /* Resources */,
 				65B4DA98CB9F8895EA825F76 /* [CP] Embed Pods Frameworks */,
+				06E80D2643400DD775228CB7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -211,6 +324,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		06E80D2643400DD775228CB7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SalesCollector/Pods-SalesCollector-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SalesCollector/Pods-SalesCollector-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SalesCollector/Pods-SalesCollector-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		1E285CA6A03BA2DB0B42FD2A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -257,22 +387,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07039BA0244E92D4008601EF /* CustomTableViewCell.swift in Sources */,
 				073356202447C60D008DECE7 /* SecondViewController.swift in Sources */,
+				07A5C5892451624F008F19D1 /* ItemDetails.swift in Sources */,
+				07BA22AA244FF66400173119 /* StoreDetailsTableViewController.swift in Sources */,
 				0733561E2447C60D008DECE7 /* FirstViewController.swift in Sources */,
+				07A5C592245223BC008F19D1 /* Mark.swift in Sources */,
 				07C23D82244B7F7800E32F6B /* CustomButton.swift in Sources */,
 				07C23D8A244D1DF400E32F6B /* ForgotpasswordViewController.swift in Sources */,
 				07039B90244E0827008601EF /* data.xcdatamodeld in Sources */,
-				07C23D86244BA35700E32F6B /* RootViewController.swift in Sources */,
+				07C23D86244BA35700E32F6B /* LoginViewController.swift in Sources */,
+				07A5C58D24520F1A008F19D1 /* LoadingProgressViewController.swift in Sources */,
 				07039B9C244E0913008601EF /* UserInfo+CoreDataProperties.swift in Sources */,
+				07E7C89D24513778009B95A6 /* PopCouponViewController.swift in Sources */,
 				07FFEE9D2447CA2700186D73 /* API.swift in Sources */,
+				07A5C59424523129008F19D1 /* CustomTextField.swift in Sources */,
 				07C23D80244B7E3600E32F6B /* EmailEditingTableViewController.swift in Sources */,
-				07F0C0D424490CF500E853C2 /* StoreInfosTableViewController.swift in Sources */,
+				070DB6072452919D00040F5A /* SharingTableViewController.swift in Sources */,
+				07F0C0D424490CF500E853C2 /* mainvc.swift in Sources */,
+				07A5C59624523983008F19D1 /* item.swift in Sources */,
 				07C23D8C244D1E1A00E32F6B /* RegisterViewController.swift in Sources */,
+				07A5C58724515434008F19D1 /* CustomSearchBar.swift in Sources */,
 				07C23D7E244A492000E32F6B /* CustomSegue.swift in Sources */,
 				07039B9B244E0913008601EF /* UserInfo+CoreDataClass.swift in Sources */,
+				07A5C58B2452065B008F19D1 /* BasetabBarController.swift in Sources */,
+				070DB60A2452967600040F5A /* PostViewController.swift in Sources */,
+				07039BA2244ED45B008601EF /* gardientColor.swift in Sources */,
 				0733561A2447C60D008DECE7 /* AppDelegate.swift in Sources */,
+				07A5C59024521EEF008F19D1 /* MarkTableViewController.swift in Sources */,
+				07039BA4244F9714008601EF /* StoreDetail.swift in Sources */,
 				07C23D84244B994600E32F6B /* DesignableView.swift in Sources */,
-				07C23D7C24494FA000E32F6B /* UsersAndSettingsTableViewController.swift in Sources */,
+				07C23D7C24494FA000E32F6B /* ProfileVC.swift in Sources */,
+				07E7C89B2450F383009B95A6 /* ItemTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

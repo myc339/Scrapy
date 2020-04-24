@@ -763,6 +763,14 @@ distribution of the accompanying software as specified below.
   SUCH DAMAGES.
 
 
+## GoogleMaps
+
+Copyright 2020 Google
+
+## GooglePlaces
+
+Copyright 2020 Google
+
 ## ReachabilitySwift
 
 Copyright (c) 2016 Ashley Mills
