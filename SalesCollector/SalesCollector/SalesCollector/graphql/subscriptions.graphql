@@ -1,0 +1,370 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateMyType {
+  onCreateMyType {
+    id
+    title
+    content
+    price
+    rating
+  }
+}
+subscription OnUpdateMyType {
+  onUpdateMyType {
+    id
+    title
+    content
+    price
+    rating
+  }
+}
+subscription OnDeleteMyType {
+  onDeleteMyType {
+    id
+    title
+    content
+    price
+    rating
+  }
+}
+subscription OnCreateStopshop(
+  $ItemId: String
+  $storeCode: String
+  $Coupon: String
+  $category: String
+  $Item: String
+) {
+  onCreateStopshop(
+    ItemId: $ItemId
+    storeCode: $storeCode
+    Coupon: $Coupon
+    category: $category
+    Item: $Item
+  ) {
+    ItemId
+    storeCode
+    Coupon
+    category
+    Item
+    ImageSrc
+    PriceTag
+    validity
+    itemDisclaimerText
+    itemDescription
+    SalesStory
+    link
+  }
+}
+subscription OnUpdateStopshop(
+  $ItemId: String
+  $storeCode: String
+  $Coupon: String
+  $category: String
+  $Item: String
+) {
+  onUpdateStopshop(
+    ItemId: $ItemId
+    storeCode: $storeCode
+    Coupon: $Coupon
+    category: $category
+    Item: $Item
+  ) {
+    ItemId
+    storeCode
+    Coupon
+    category
+    Item
+    ImageSrc
+    PriceTag
+    validity
+    itemDisclaimerText
+    itemDescription
+    SalesStory
+    link
+  }
+}
+subscription OnDeleteStopshop(
+  $ItemId: String
+  $storeCode: String
+  $Coupon: String
+  $category: String
+  $Item: String
+) {
+  onDeleteStopshop(
+    ItemId: $ItemId
+    storeCode: $storeCode
+    Coupon: $Coupon
+    category: $category
+    Item: $Item
+  ) {
+    ItemId
+    storeCode
+    Coupon
+    category
+    Item
+    ImageSrc
+    PriceTag
+    validity
+    itemDisclaimerText
+    itemDescription
+    SalesStory
+    link
+  }
+}
+subscription OnCreateUsers(
+  $userId: String
+  $EmailAddress: String
+  $Phone: String
+  $Address: String
+  $City: String
+) {
+  onCreateUsers(
+    userId: $userId
+    EmailAddress: $EmailAddress
+    Phone: $Phone
+    Address: $Address
+    City: $City
+  ) {
+    userId
+    EmailAddress
+    Phone
+    Address
+    City
+    Language
+    Name
+    Password
+  }
+}
+subscription OnUpdateUsers(
+  $userId: String
+  $EmailAddress: String
+  $Phone: String
+  $Address: String
+  $City: String
+) {
+  onUpdateUsers(
+    userId: $userId
+    EmailAddress: $EmailAddress
+    Phone: $Phone
+    Address: $Address
+    City: $City
+  ) {
+    userId
+    EmailAddress
+    Phone
+    Address
+    City
+    Language
+    Name
+    Password
+  }
+}
+subscription OnDeleteUsers(
+  $userId: String
+  $EmailAddress: String
+  $Phone: String
+  $Address: String
+  $City: String
+) {
+  onDeleteUsers(
+    userId: $userId
+    EmailAddress: $EmailAddress
+    Phone: $Phone
+    Address: $Address
+    City: $City
+  ) {
+    userId
+    EmailAddress
+    Phone
+    Address
+    City
+    Language
+    Name
+    Password
+  }
+}
+subscription OnCreateStoreInfos(
+  $StoreAddress: String
+  $StoreId: String
+  $StorePostalCode: String
+  $StoreCode: String
+  $StoreName: String
+) {
+  onCreateStoreInfos(
+    StoreAddress: $StoreAddress
+    StoreId: $StoreId
+    StorePostalCode: $StorePostalCode
+    StoreCode: $StoreCode
+    StoreName: $StoreName
+  ) {
+    StoreAddress
+    StoreId
+    StorePostalCode
+    StoreCode
+    StoreName
+  }
+}
+subscription OnUpdateStoreInfos(
+  $StoreAddress: String
+  $StoreId: String
+  $StorePostalCode: String
+  $StoreCode: String
+  $StoreName: String
+) {
+  onUpdateStoreInfos(
+    StoreAddress: $StoreAddress
+    StoreId: $StoreId
+    StorePostalCode: $StorePostalCode
+    StoreCode: $StoreCode
+    StoreName: $StoreName
+  ) {
+    StoreAddress
+    StoreId
+    StorePostalCode
+    StoreCode
+    StoreName
+  }
+}
+subscription OnDeleteStoreInfos(
+  $StoreAddress: String
+  $StoreId: String
+  $StorePostalCode: String
+  $StoreCode: String
+  $StoreName: String
+) {
+  onDeleteStoreInfos(
+    StoreAddress: $StoreAddress
+    StoreId: $StoreId
+    StorePostalCode: $StorePostalCode
+    StoreCode: $StoreCode
+    StoreName: $StoreName
+  ) {
+    StoreAddress
+    StoreId
+    StorePostalCode
+    StoreCode
+    StoreName
+  }
+}
+subscription OnCreateUserMark(
+  $Markid: String
+  $UserId: String
+  $itemId: String
+  $SharingId: String
+) {
+  onCreateUserMark(
+    Markid: $Markid
+    UserId: $UserId
+    itemId: $itemId
+    SharingId: $SharingId
+  ) {
+    Markid
+    UserId
+    itemId
+    SharingId
+    Store
+  }
+}
+subscription OnUpdateUserMark(
+  $Markid: String
+  $UserId: String
+  $itemId: String
+  $SharingId: String
+) {
+  onUpdateUserMark(
+    Markid: $Markid
+    UserId: $UserId
+    itemId: $itemId
+    SharingId: $SharingId
+  ) {
+    Markid
+    UserId
+    itemId
+    SharingId
+    Store
+  }
+}
+subscription OnDeleteUserMark(
+  $Markid: String
+  $UserId: String
+  $itemId: String
+  $SharingId: String
+) {
+  onDeleteUserMark(
+    Markid: $Markid
+    UserId: $UserId
+    itemId: $itemId
+    SharingId: $SharingId
+  ) {
+    Markid
+    UserId
+    itemId
+    SharingId
+    Store
+  }
+}
+subscription OnCreateUserSharing(
+  $ShareId: String
+  $UserId: String
+  $Content: String
+  $ReleaseDate: String
+  $ImgSrc: String
+) {
+  onCreateUserSharing(
+    ShareId: $ShareId
+    UserId: $UserId
+    Content: $Content
+    ReleaseDate: $ReleaseDate
+    ImgSrc: $ImgSrc
+  ) {
+    ShareId
+    UserId
+    Content
+    ReleaseDate
+    ImgSrc
+    title
+  }
+}
+subscription OnUpdateUserSharing(
+  $ShareId: String
+  $UserId: String
+  $Content: String
+  $ReleaseDate: String
+  $ImgSrc: String
+) {
+  onUpdateUserSharing(
+    ShareId: $ShareId
+    UserId: $UserId
+    Content: $Content
+    ReleaseDate: $ReleaseDate
+    ImgSrc: $ImgSrc
+  ) {
+    ShareId
+    UserId
+    Content
+    ReleaseDate
+    ImgSrc
+    title
+  }
+}
+subscription OnDeleteUserSharing(
+  $ShareId: String
+  $UserId: String
+  $Content: String
+  $ReleaseDate: String
+  $ImgSrc: String
+) {
+  onDeleteUserSharing(
+    ShareId: $ShareId
+    UserId: $UserId
+    Content: $Content
+    ReleaseDate: $ReleaseDate
+    ImgSrc: $ImgSrc
+  ) {
+    ShareId
+    UserId
+    Content
+    ReleaseDate
+    ImgSrc
+    title
+  }
+}

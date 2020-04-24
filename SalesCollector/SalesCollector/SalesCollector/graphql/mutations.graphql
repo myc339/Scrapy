@@ -1,0 +1,205 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateMyType(
+  $input: CreateMyTypeInput!
+  $condition: ModelMyTypeConditionInput
+) {
+  createMyType(input: $input, condition: $condition) {
+    id
+    title
+    content
+    price
+    rating
+  }
+}
+mutation UpdateMyType(
+  $input: UpdateMyTypeInput!
+  $condition: ModelMyTypeConditionInput
+) {
+  updateMyType(input: $input, condition: $condition) {
+    id
+    title
+    content
+    price
+    rating
+  }
+}
+mutation DeleteMyType(
+  $input: DeleteMyTypeInput!
+  $condition: ModelMyTypeConditionInput
+) {
+  deleteMyType(input: $input, condition: $condition) {
+    id
+    title
+    content
+    price
+    rating
+  }
+}
+mutation CreateStopshop($input: CreateStopshopInput!) {
+  createStopshop(input: $input) {
+    ItemId
+    storeCode
+    Coupon
+    category
+    Item
+    ImageSrc
+    PriceTag
+    validity
+    itemDisclaimerText
+    itemDescription
+    SalesStory
+    link
+  }
+}
+mutation UpdateStopshop($input: UpdateStopshopInput!) {
+  updateStopshop(input: $input) {
+    ItemId
+    storeCode
+    Coupon
+    category
+    Item
+    ImageSrc
+    PriceTag
+    validity
+    itemDisclaimerText
+    itemDescription
+    SalesStory
+    link
+  }
+}
+mutation DeleteStopshop($input: DeleteStopshopInput!) {
+  deleteStopshop(input: $input) {
+    ItemId
+    storeCode
+    Coupon
+    category
+    Item
+    ImageSrc
+    PriceTag
+    validity
+    itemDisclaimerText
+    itemDescription
+    SalesStory
+    link
+  }
+}
+mutation CreateUsers($input: CreateUsersInput!) {
+  createUsers(input: $input) {
+    userId
+    EmailAddress
+    Phone
+    Address
+    City
+    Language
+    Name
+    Password
+  }
+}
+mutation UpdateUsers($input: UpdateUsersInput!) {
+  updateUsers(input: $input) {
+    userId
+    EmailAddress
+    Phone
+    Address
+    City
+    Language
+    Name
+    Password
+  }
+}
+mutation DeleteUsers($input: DeleteUsersInput!) {
+  deleteUsers(input: $input) {
+    userId
+    EmailAddress
+    Phone
+    Address
+    City
+    Language
+    Name
+    Password
+  }
+}
+mutation CreateStoreInfos($input: CreateStoreInfosInput!) {
+  createStoreInfos(input: $input) {
+    StoreAddress
+    StoreId
+    StorePostalCode
+    StoreCode
+    StoreName
+  }
+}
+mutation UpdateStoreInfos($input: UpdateStoreInfosInput!) {
+  updateStoreInfos(input: $input) {
+    StoreAddress
+    StoreId
+    StorePostalCode
+    StoreCode
+    StoreName
+  }
+}
+mutation DeleteStoreInfos($input: DeleteStoreInfosInput!) {
+  deleteStoreInfos(input: $input) {
+    StoreAddress
+    StoreId
+    StorePostalCode
+    StoreCode
+    StoreName
+  }
+}
+mutation CreateUserMark($input: CreateUserMarkInput!) {
+  createUserMark(input: $input) {
+    Markid
+    UserId
+    itemId
+    SharingId
+    Store
+  }
+}
+mutation UpdateUserMark($input: UpdateUserMarkInput!) {
+  updateUserMark(input: $input) {
+    Markid
+    UserId
+    itemId
+    SharingId
+    Store
+  }
+}
+mutation DeleteUserMark($input: DeleteUserMarkInput!) {
+  deleteUserMark(input: $input) {
+    Markid
+    UserId
+    itemId
+    SharingId
+    Store
+  }
+}
+mutation CreateUserSharing($input: CreateUserSharingInput!) {
+  createUserSharing(input: $input) {
+    ShareId
+    UserId
+    Content
+    ReleaseDate
+    ImgSrc
+    title
+  }
+}
+mutation UpdateUserSharing($input: UpdateUserSharingInput!) {
+  updateUserSharing(input: $input) {
+    ShareId
+    UserId
+    Content
+    ReleaseDate
+    ImgSrc
+    title
+  }
+}
+mutation DeleteUserSharing($input: DeleteUserSharingInput!) {
+  deleteUserSharing(input: $input) {
+    ShareId
+    UserId
+    Content
+    ReleaseDate
+    ImgSrc
+    title
+  }
+}
